@@ -22,6 +22,8 @@ app.post(
     stripeWebhook
 )
 
+connectDb();
+
 app.use(cors(
     {origin: [
       "http://localhost:5173",
@@ -46,7 +48,7 @@ app.use("/api/credit" , creditRouter)
 
 
 
-app.listen(PORT, () =>{
-    console.log(`Server running on port ${PORT}`);
-    connectDb()
-})
+// app.listen(PORT, () =>{
+//     console.log(`Server running on port ${PORT}`);
+//     connectDb()
+// })
