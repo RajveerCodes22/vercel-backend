@@ -23,7 +23,10 @@ app.post(
 )
 
 app.use(cors(
-    {origin : ["http://localhost:5173", "https://vercel-frontend-five-ebon.vercel.app"]
+    {origin: [
+      "http://localhost:5173",
+      "https://vercel-frontend-five-ebon.vercel.app",
+    ],
     credentials : true,
     methods : ["GET" , "POST", "PUT", "DELETE", "OPTIONS"]
     }
