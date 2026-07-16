@@ -46,7 +46,7 @@ app.use("/api/notes" , notesRouter)
 app.use("/api/pdf" , pdfRouter)
 app.use("/api/credit" , creditRouter)
 
-
+export default app;
 
 // app.listen(PORT, () =>{
 //     console.log(`Server running on port ${PORT}`);
