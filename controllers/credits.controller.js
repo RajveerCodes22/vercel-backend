@@ -3,6 +3,10 @@ import UserModel from "../models/user.model.js"
 import dotenv from "dotenv"
 dotenv.config()
 
+
+console.log("CLIENT_URL:", process.env.CLIENT_URL);
+console.log("Success URL:", `${process.env.CLIENT_URL}/payment-success`);
+console.log("Cancel URL:", `${process.env.CLIENT_URL}/payment-failed`);
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 
 const Credit_Map = {
